@@ -1,0 +1,28 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "commonjs",
+    "outDir": "build",
+    "allowJs": true,
+//    "checkJs": false,
+    "declaration": false,
+    "moduleResolution": "node",
+    "noImplicitAny": false,
+    "allowSyntheticDefaultImports": true,
+    //  Setting baseUrl informs the compiler where to find modules. All module imports with non-relative names are assumed to be relative to the baseUrl.
+    "baseUrl": ".", // this must be specified if "paths" is specified. A non-relative import can be resolved relative to baseUrl
+    "types": [],
+    "paths": { // A series of entries which re-map imports to lookup locations relative to the baseUrl,
+      "@/*": ["src/*"]
+    }
+  },
+  "include": [
+    "src/**/**.ts",
+    "src/**/**.js"
+
+  ],
+  "exclude": [
+    "node_modules"
+  ],
+
+}
